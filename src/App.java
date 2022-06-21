@@ -5,6 +5,7 @@ import ex04.Elevador;
 import ex05.Aluno;
 import ex06.Invoice;
 import ex07.Funcionario;
+import ex08.Data;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -16,8 +17,19 @@ public class App {
         // ex04();
         // ex05();
         // ex06();
-        ex07();
-    }    
+        // ex07();
+        ex08();
+    }
+
+    static void ex08() {
+        Data d1 = new Data(30, 1, 2022);
+        Data d2 = new Data(30, 5, 2022);
+        Data d3 = d1.clone();
+        System.out.println(d1.toString());
+        System.out.println(d1.compare(d2) == -1);
+        System.out.println(d3.toString());
+
+    }
 
     static void ex01() {
         System.out.println("Executando ex01");
@@ -93,11 +105,12 @@ public class App {
         System.out.printf("Salário anual: R$ %.2f\n", fulano.getAnual());
         System.out.printf("Salário anual: R$ %.2f\n", ciclano.getAnual());
 
-        //Aumento de 10%
+        // Aumento de 10%
         fulano.setSalario(fulano.getSalario() * 1.1f);
         ciclano.setSalario(ciclano.getSalario() * 1.1f);
         System.out.printf("Salário anual: R$ %.2f\n", fulano.getAnual());
         System.out.printf("Salário anual: R$ %.2f\n", ciclano.getAnual());
 
     }
+
 }

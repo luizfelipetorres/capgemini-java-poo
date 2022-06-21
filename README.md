@@ -28,17 +28,14 @@ prédio (os elevadores sempre começam no térreo e vazio);
   - a quantidade comprada do item e
   - o preço unitário do item.
 Sua classe deve ter um construtor que inicialize os quatro atributos. Se a quantidade não for positiva, ela deve ser configurada como 0. Se o preço por item não for positivo ele deve ser configurado como 0.0. Forneça os métodos getters e setters para cada variável de instância. Além disso, forneça um método chamado getInvoiceAmount que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço por item) e depois retorna o valor como um double. Escreva um aplicativo de teste que demonstra as capacidades da classe Invoice.
-- [ ] 7. A fim de representar funcionários em uma empresa, crie uma classe chamada Funcionario que inclui as três informações a seguir como atributos:
+- [x] 7. A fim de representar funcionários em uma empresa, crie uma classe chamada Funcionario que inclui as três informações a seguir como atributos:
   - um primeiro nome,
   - um sobrenome
   - um salário mensal
 Sua classe deve ter um construtor que inicializa os três atributos. Forneça os métodos getters e setters para cada atributo. Se o salário mensal não for positivo, configure-o como 0.0. Escreva um aplicativo de teste que demonstra as capacidades da classe. Crie duas instâncias da classe e exiba o salário anual de cada instância. Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada empregado.
-- [ ] 8. Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos
-seguintes métodos:
-  - Construtor: define a data que determinado objeto (através de parâmetro), este método verifica se a
-data está correta, caso não esteja a data é configurada como 01/01/0001
-  - Compara: recebe como parâmetro um outro objeto da Classe data, compare com a data corrente e
-retorne:
+- [x] 8. Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos seguintes métodos:
+  - Construtor: define a data que determinado objeto (através de parâmetro), este método verifica se a data está correta, caso não esteja a data é configurada como 01/01/0001
+  - Compara: recebe como parâmetro um outro objeto da Classe data, compare com a data corrente e retorne:
     - 0 se as datas forem iguais;
       - 1 se a data corrente for maior que a do parâmetro;
       - -1 se a data do parâmetro for maior que a corrente.
