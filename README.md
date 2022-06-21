@@ -19,25 +19,20 @@ prédio (os elevadores sempre começam no térreo e vazio);
 - Sai: para remover uma pessoa do elevador (só deve remover se houver alguém dentro dele);
 - Sobe: para subir um andar (não deve subir se já estiver no último andar);
 - Desce: para descer um andar (não deve descer se já estiver no térreo);
-- [ ] 5. Escreva uma classe cujos objetos representam alunos matriculados em uma disciplina. Cada objeto dessa classe deve guardar os seguintes dados do aluno: matrícula, nome, 2 notas de prova e 1 nota de trabalho. Escreva os seguintes métodos para esta classe:
+- [x] 5. Escreva uma classe cujos objetos representam alunos matriculados em uma disciplina. Cada objeto dessa classe deve guardar os seguintes dados do aluno: matrícula, nome, 2 notas de prova e 1 nota de trabalho. Escreva os seguintes métodos para esta classe:
 - media: calcula a média final do aluno (cada prova tem peso 2,5 e o trabalho tem peso 2)
 - final: calcula quanto o aluno precisa para a prova final (retorna zero se ele não for para a final)
-- [ ] 6. Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para
-representar uma fatura de um item vendido na loja. Uma fatura deve incluir as seguintes informações
-como atributos:
-
+- [ ] 6. Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para representar uma fatura de um item vendido na loja. Uma fatura deve incluir as seguintes informações como atributos:
 - o número do item faturado,
 - a descrição do item,
 - a quantidade comprada do item e
-- o preço unitário do item.Curso de Lógica para Programação III
+- o preço unitário do item.
 Sua classe deve ter um construtor que inicialize os quatro atributos. Se a quantidade não for positiva, ela deve ser configurada como 0. Se o preço por item não for positivo ele deve ser configurado como 0.0. Forneça os métodos getters e setters para cada variável de instância. Além disso, forneça um método chamado getInvoiceAmount que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço por item) e depois retorna o valor como um double. Escreva um aplicativo de teste que demonstra as capacidades da classe Invoice.
-- [ ] 7. A fim de representar funcionários em uma empresa, crie uma classe chamada Funcionario que inclui as
-três informações a seguir como atributos:
+- [ ] 7. A fim de representar funcionários em uma empresa, crie uma classe chamada Funcionario que inclui as três informações a seguir como atributos:
 - um primeiro nome,
 - um sobrenome
 - um salário mensal
-Sua classe deve ter um construtor que inicializa os três atributos. Forneça os métodos getters e setters para cada atributo. Se o salário mensal não for positivo, configure-o como 0.0. Escreva um aplicativo de teste que demonstra as capacidades da classe. Crie duas instâncias da classe e exiba o salário anual de cada instância. Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada
-empregado.
+Sua classe deve ter um construtor que inicializa os três atributos. Forneça os métodos getters e setters para cada atributo. Se o salário mensal não for positivo, configure-o como 0.0. Escreva um aplicativo de teste que demonstra as capacidades da classe. Crie duas instâncias da classe e exiba o salário anual de cada instância. Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada empregado.
 - [ ] 8. Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos
 seguintes métodos:
 - Construtor: define a data que determinado objeto (através de parâmetro), este método verifica se a

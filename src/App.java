@@ -3,6 +3,7 @@ import ex02.ContaCorrente;
 import ex03.BombaCombustivel;
 import ex04.Elevador;
 import ex05.Aluno;
+import ex06.Invoice;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -12,7 +13,8 @@ public class App {
         // ex02();
         // ex03();
         // ex04();
-        ex05();
+        // ex05();
+        ex06();
     }
 
     static void ex01() {
@@ -71,5 +73,13 @@ public class App {
         System.out.println("Sua média é " + a.media());
         System.out.println("Voce precisa de " + a.notaFinal() + " para a prova final");
 
+    }
+
+    static void ex06() {
+        Invoice i = new Invoice(1, "Cadeira gamer", 3, 1000);
+        System.out.printf("Valor faturado total: R$ %.2f\n", i.getInvoiceAmount());
+
+        Invoice j = new Invoice(2, "lapis", -3, -1);
+        System.out.printf("Valor faturado total: R$ %.2f\n", j.getInvoiceAmount());
     }
 }
