@@ -2,6 +2,7 @@ import ex01.Pessoa;
 import ex02.ContaCorrente;
 import ex03.BombaCombustivel;
 import ex04.Elevador;
+import ex05.Aluno;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -10,7 +11,8 @@ public class App {
         // ex01();
         // ex02();
         // ex03();
-        ex04();
+        // ex04();
+        ex05();
     }
 
     static void ex01() {
@@ -30,9 +32,9 @@ public class App {
 
     static void ex03() {
         BombaCombustivel b1 = new BombaCombustivel("Gasolina", 5.5f, 10f);
-        
+
         b1.abastecerPorLitro(3f);
-        b1.abastecerPorValor(5.5f*7);
+        b1.abastecerPorValor(5.5f * 7);
         b1.abastecerPorLitro(1f);
         b1.abastecerPorValor(1f);
         b1.alterarCombustivel("Alcool");
@@ -43,7 +45,7 @@ public class App {
 
     }
 
-    static void ex04(){
+    static void ex04() {
         System.out.println("Iniciando ex4");
 
         Elevador e = new Elevador();
@@ -59,6 +61,15 @@ public class App {
             e.sobre();
         }
         System.out.println(e.toString());
+
+    }
+
+    static void ex05() {
+        System.out.println("Iniciando ex05");
+        Aluno a = new Aluno("20212101", "Luiz F", 3f, 2f, 5f);
+        
+        System.out.println("Sua média é " + a.media());
+        System.out.println("Voce precisa de " + a.notaFinal() + " para a prova final");
 
     }
 }
