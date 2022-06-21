@@ -4,6 +4,7 @@ import ex03.BombaCombustivel;
 import ex04.Elevador;
 import ex05.Aluno;
 import ex06.Invoice;
+import ex07.Funcionario;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -14,8 +15,9 @@ public class App {
         // ex03();
         // ex04();
         // ex05();
-        ex06();
-    }
+        // ex06();
+        ex07();
+    }    
 
     static void ex01() {
         System.out.println("Executando ex01");
@@ -69,7 +71,7 @@ public class App {
     static void ex05() {
         System.out.println("Iniciando ex05");
         Aluno a = new Aluno("20212101", "Luiz F", 3f, 2f, 5f);
-        
+
         System.out.println("Sua média é " + a.media());
         System.out.println("Voce precisa de " + a.notaFinal() + " para a prova final");
 
@@ -81,5 +83,21 @@ public class App {
 
         Invoice j = new Invoice(2, "lapis", -3, -1);
         System.out.printf("Valor faturado total: R$ %.2f\n", j.getInvoiceAmount());
+    }
+
+    static void ex07() {
+        System.out.println("App.ex07()");
+        Funcionario fulano = new Funcionario("Fulano", "de Tal", 1000f);
+        Funcionario ciclano = new Funcionario("Ciclano", "de Tal", -20f);
+
+        System.out.printf("Salário anual: R$ %.2f\n", fulano.getAnual());
+        System.out.printf("Salário anual: R$ %.2f\n", ciclano.getAnual());
+
+        //Aumento de 10%
+        fulano.setSalario(fulano.getSalario() * 1.1f);
+        ciclano.setSalario(ciclano.getSalario() * 1.1f);
+        System.out.printf("Salário anual: R$ %.2f\n", fulano.getAnual());
+        System.out.printf("Salário anual: R$ %.2f\n", ciclano.getAnual());
+
     }
 }
