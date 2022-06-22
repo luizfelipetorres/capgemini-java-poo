@@ -7,22 +7,35 @@ import ex06.Invoice;
 import ex07.Funcionario;
 import ex08.Data;
 import ex09.Voo;
+import ex10.Jogador;
+import ex10.Jogador.Posicao;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         /*
-         * ex01();
-         * ex02();
-         * ex03();
-         * ex04();
-         * ex05();
-         * ex06();
-         * ex07();
-         * ex08();
-         */
+        ex01();
+        ex02();
+        ex03();
+        ex04();
+        ex05();
+        ex06();
+        ex07();
+        ex08();
         ex09();
+         */
+        ex10();
+
+    }
+
+    static void ex10() {
+        System.out.println("App.ex10()");
+        Jogador ney = new Jogador("Neymar", Posicao.ATAQUE, new Data(13, 12, 1996)  , 1.8f, 90f);
+    
+        System.out.println(ney.toString());
+        System.out.println(ney.getIdade());
+        System.out.printf("Faltam %d anos para a aposentadoria de %s.\n", ney.getTempoAposentadoria(), ney.getNome());
     }
 
     static void ex09() {

@@ -52,7 +52,7 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça os
 - Ocupa: ocupa determinada cadeira do vôo, cujo número é recebido como parâmetro, e retorna verdadeiro se a cadeira ainda não estiver ocupada (operação foi bem sucedida) e falso caso contrário
 - Vagas: retorna o número de cadeiras vagas disponíveis (não ocupadas) no vôo
 - GetVoo: retorna o número do vôo
-- [ ] 10.  Crie uma classe para representar um jogador de futebol, com os atributos:
+- [x] 10.  Crie uma classe para representar um jogador de futebol, com os atributos:
 - nome;
 - posição;
 - data de nascimento;
