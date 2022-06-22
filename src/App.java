@@ -6,19 +6,37 @@ import ex05.Aluno;
 import ex06.Invoice;
 import ex07.Funcionario;
 import ex08.Data;
+import ex09.Voo;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        // ex01();
-        // ex02();
-        // ex03();
-        // ex04();
-        // ex05();
-        // ex06();
-        // ex07();
-        ex08();
+        /*
+         * ex01();
+         * ex02();
+         * ex03();
+         * ex04();
+         * ex05();
+         * ex06();
+         * ex07();
+         * ex08();
+         */
+        ex09();
+    }
+
+    static void ex09() {
+        Voo v = new Voo("100", new Data(13, 12, 1996));
+        System.out.println(v.toString());
+
+        System.out.println("Primeiro assento livre: " + v.proximoLivre());
+        v.ocupa(1);
+        v.ocupa(2);
+        v.ocupa(101);
+        v.isVazio(1);
+        System.out.println("Primeiro assento livre: " + v.proximoLivre());
+
+
     }
 
     static void ex08() {
@@ -30,6 +48,7 @@ public class App {
         System.out.println(d3.toString());
 
     }
+
 
     static void ex01() {
         System.out.println("Executando ex01");

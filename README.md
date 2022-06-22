@@ -45,7 +45,7 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça os
   - GetAno: retorna o ano da data
   - IsBissexto: retorna verdadeiro se o ano da data corrente for bissexto e falso caso contrário
   - Clone: o objeto clona a si próprio, para isto, ele cria um novo objeto da classe Data com os mesmos valores de atributos e retorna sua referência pelo método
-- [ ] 9. Escreva uma classe em que cada objeto representa um Voo que acontece em determinada data e em determinado horário. Cada vôo possui no máximo 100 passageiros, e a classe permite controlar a ocupação das vagas. A classe deve ter os seguintes métodos:
+- [x] 9. Escreva uma classe em que cada objeto representa um Voo que acontece em determinada data e em determinado horário. Cada vôo possui no máximo 100 passageiros, e a classe permite controlar a ocupação das vagas. A classe deve ter os seguintes métodos:
 - Construtor: configura os dados do vôo (recebidos como parâmetro): número do vôo, data (para armazenar a data utilize um objeto da classe Data, criada na questão anterior);
 - ProximoLivre: retorna o número da próxima cadeira livre
 - Verifica: verifica se o número da cadeira recebido como parâmetro está ocupada
