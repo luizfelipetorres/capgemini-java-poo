@@ -60,8 +60,8 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça os
 - altura;
 - peso;
 Crie os métodos públicos necessários para getters e setters e também um método para imprimir todos os dados do jogador. Crie um método para calcular a idade do jogador e outro método para mostrar quanto tempo falta para o jogador se aposentar. Para isso, considere que os jogadores da posição de defesa se aposentam em média aos 40 anos, os jogadores de meio-campo aos 38 e os atacantes aos 35.
-- [ ] 11.  Crie uma classe chamada Ingresso, que possui um valor em reais e um método imprimirValor. Crie uma classe IngressoVIP, que herda de Ingresso e possui um valor adicional. Crie um método que retorne o valor do ingresso VIP (com o adicional incluído). Crie um programa para criar as instâncias de Ingresso e IngressoVIP, mostrando a diferença de preços.
-- [ ] 12. Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar as seguintes operações:
+- [x] 11.  Crie uma classe chamada Ingresso, que possui um valor em reais e um método imprimirValor. Crie uma classe IngressoVIP, que herda de Ingresso e possui um valor adicional. Crie um método que retorne o valor do ingresso VIP (com o adicional incluído). Crie um programa para criar as instâncias de Ingresso e IngressoVIP, mostrando a diferença de preços.
+- [x] 12. Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar as seguintes operações:
 - void armazenarPessoa(String nome, int idade, float altura); //armazena a pessoa em um array
 - void removerPessoa(String nome); //remove a pessoa do array
 - int buscarPessoa(String nome); // informa em que posição da agenda está a pessoa
