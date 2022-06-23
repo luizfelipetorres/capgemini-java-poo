@@ -11,25 +11,44 @@ import ex10.Jogador;
 import ex10.Jogador.Posicao;
 import ex11.Ingresso;
 import ex11.IngressoVip;
+import ex12.Agenda;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         /*
-        ex01();
-        ex02();
-        ex03();
-        ex04();
-        ex05();
-        ex06();
-        ex07();
-        ex08();
-        ex09();
-        ex10();
+         * ex01();
+         * ex02();
+         * ex03();
+         * ex04();
+         * ex05();
+         * ex06();
+         * ex07();
+         * ex08();
+         * ex09();
+         * ex10();
+         * ex11();
          */
-        ex11();
+        ex12();
+    }
 
+    static void ex12() {
+        System.out.println("App.ex12()");
+        Agenda a = new Agenda();
+        Pessoa p1 = new Pessoa("Luiz", "13/12/1996", 1.8f);
+        Pessoa p2 = new Pessoa("Vanda", "13/12/1996", 1.8f);
+        Pessoa p3 = new Pessoa("Luis", "13/12/1996", 1.8f);
+        Pessoa p4 = new Pessoa("Diego", "13/12/1996", 1.8f);
+
+        a.armazenarPessoa(p1);
+        a.armazenarPessoa(p2);
+        a.armazenarPessoa(p3);
+        a.armazenarPessoa(p4);
+        System.out.println(a.buscarPessoa(p3));
+        a.removerPessoa(p3);
+        a.imprimirAgenda();
+        a.imprimirPessoa(2);
     }
 
     static void ex11() {
@@ -43,8 +62,8 @@ public class App {
 
     static void ex10() {
         System.out.println("App.ex10()");
-        Jogador ney = new Jogador("Neymar", Posicao.ATAQUE, new Data(13, 12, 1996)  , 1.8f, 90f);
-    
+        Jogador ney = new Jogador("Neymar", Posicao.ATAQUE, new Data(13, 12, 1996), 1.8f, 90f);
+
         System.out.println(ney.toString());
         System.out.println(ney.getIdade());
         System.out.printf("Faltam %d anos para a aposentadoria de %s.\n", ney.getTempoAposentadoria(), ney.getNome());
@@ -61,7 +80,6 @@ public class App {
         v.isVazio(1);
         System.out.println("Primeiro assento livre: " + v.proximoLivre());
 
-
     }
 
     static void ex08() {
@@ -73,7 +91,6 @@ public class App {
         System.out.println(d3.toString());
 
     }
-
 
     static void ex01() {
         System.out.println("Executando ex01");
