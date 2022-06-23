@@ -22,16 +22,18 @@ prédio (os elevadores sempre começam no térreo e vazio);
 - [x] 5. Escreva uma classe cujos objetos representam alunos matriculados em uma disciplina. Cada objeto dessa classe deve guardar os seguintes dados do aluno: matrícula, nome, 2 notas de prova e 1 nota de trabalho. Escreva os seguintes métodos para esta classe:
   - media: calcula a média final do aluno (cada prova tem peso 2,5 e o trabalho tem peso 2)
   - final: calcula quanto o aluno precisa para a prova final (retorna zero se ele não for para a final)
-- [x] 6. Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para representar uma fatura de um item vendido na loja. Uma fatura deve incluir as seguintes informações como atributos:
+- [x] 6. Crie uma classe chamada Invoice que possa ser utilizado por uma loja de suprimentos de informática para representar uma fatura de um item vendido na loja. Uma fatura deve incluir as seguintes informações como atributos
   - o número do item faturado,
   - a descrição do item,
   - a quantidade comprada do item e
   - o preço unitário do item.
+  
 Sua classe deve ter um construtor que inicialize os quatro atributos. Se a quantidade não for positiva, ela deve ser configurada como 0. Se o preço por item não for positivo ele deve ser configurado como 0.0. Forneça os métodos getters e setters para cada variável de instância. Além disso, forneça um método chamado getInvoiceAmount que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço por item) e depois retorna o valor como um double. Escreva um aplicativo de teste que demonstra as capacidades da classe Invoice.
 - [x] 7. A fim de representar funcionários em uma empresa, crie uma classe chamada Funcionario que inclui as três informações a seguir como atributos:
   - um primeiro nome,
   - um sobrenome
   - um salário mensal
+  
 Sua classe deve ter um construtor que inicializa os três atributos. Forneça os métodos getters e setters para cada atributo. Se o salário mensal não for positivo, configure-o como 0.0. Escreva um aplicativo de teste que demonstra as capacidades da classe. Crie duas instâncias da classe e exiba o salário anual de cada instância. Então dê a cada empregado um aumento de 10% e exiba novamente o salário anual de cada empregado.
 - [x] 8. Escreva uma classe Data cuja instância (objeto) represente uma data. Esta classe deverá dispor dos seguintes métodos:
   - Construtor: define a data que determinado objeto (através de parâmetro), este método verifica se a data está correta, caso não esteja a data é configurada como 01/01/0001
@@ -45,6 +47,7 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça os
   - GetAno: retorna o ano da data
   - IsBissexto: retorna verdadeiro se o ano da data corrente for bissexto e falso caso contrário
   - Clone: o objeto clona a si próprio, para isto, ele cria um novo objeto da classe Data com os mesmos valores de atributos e retorna sua referência pelo método
+  
 - [x] 9. Escreva uma classe em que cada objeto representa um Voo que acontece em determinada data e em determinado horário. Cada vôo possui no máximo 100 passageiros, e a classe permite controlar a ocupação das vagas. A classe deve ter os seguintes métodos:
 - Construtor: configura os dados do vôo (recebidos como parâmetro): número do vôo, data (para armazenar a data utilize um objeto da classe Data, criada na questão anterior);
 - ProximoLivre: retorna o número da próxima cadeira livre
@@ -59,6 +62,7 @@ Sua classe deve ter um construtor que inicializa os três atributos. Forneça os
 - nacionalidade;
 - altura;
 - peso;
+  
 Crie os métodos públicos necessários para getters e setters e também um método para imprimir todos os dados do jogador. Crie um método para calcular a idade do jogador e outro método para mostrar quanto tempo falta para o jogador se aposentar. Para isso, considere que os jogadores da posição de defesa se aposentam em média aos 40 anos, os jogadores de meio-campo aos 38 e os atacantes aos 35.
 - [ ] 11.  Crie uma classe chamada Ingresso, que possui um valor em reais e um método imprimirValor. Crie uma classe IngressoVIP, que herda de Ingresso e possui um valor adicional. Crie um método que retorne o valor do ingresso VIP (com o adicional incluído). Crie um programa para criar as instâncias de Ingresso e IngressoVIP, mostrando a diferença de preços.
 - [ ] 12. Crie uma classe Agenda que pode armazenar 10 pessoas e que seja capaz de realizar as seguintes operações:

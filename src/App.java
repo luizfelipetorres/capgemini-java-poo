@@ -9,6 +9,8 @@ import ex08.Data;
 import ex09.Voo;
 import ex10.Jogador;
 import ex10.Jogador.Posicao;
+import ex11.Ingresso;
+import ex11.IngressoVip;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -24,8 +26,18 @@ public class App {
         ex07();
         ex08();
         ex09();
-         */
         ex10();
+         */
+        ex11();
+
+    }
+
+    static void ex11() {
+        System.out.println("App.ex11()");
+        Ingresso i = new Ingresso();
+        i.imprimirValor();
+        IngressoVip iv = new IngressoVip();
+        iv.imprimirValor();
 
     }
 
