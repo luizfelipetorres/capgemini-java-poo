@@ -29,8 +29,11 @@ public class App {
          * ex09();
          * ex10();
          * ex11();
+         ex12();
          */
-        ex12();
+
+         String valor = "1";
+         System.out.println(valor+1+2);
     }
 
     static void ex12() {
