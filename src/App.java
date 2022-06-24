@@ -12,6 +12,8 @@ import ex10.Jogador.Posicao;
 import ex11.Ingresso;
 import ex11.IngressoVip;
 import ex12.Agenda;
+import ex13.Calculadora;
+import ex13.CalculadoraCientifica;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -32,8 +34,21 @@ public class App {
          ex12();
          */
 
-         String valor = "1";
-         System.out.println(valor+1+2);
+        ex13();
+    }
+
+    static void ex13() {
+        System.out.println("App.ex13()");
+
+        Calculadora c = new Calculadora();
+        CalculadoraCientifica cc = new CalculadoraCientifica();
+
+        System.out.println(c.soma(10f, 12f));
+        System.out.println(c.multiplicacao(2, 3));
+        System.out.println(c.divisao(3, 2));
+        System.out.println(c.subtracao(10, 8));
+        System.out.println(cc.potencia(2, -2));
+        System.out.println(cc.raizQuadrada(25, 2));
     }
 
     static void ex12() {
