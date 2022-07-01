@@ -1,5 +1,6 @@
 package ex13;
 
+
 public class CalculadoraCientifica extends Calculadora {
     public float potencia(float n1, float n2) {
         float r = n1;
@@ -26,9 +27,9 @@ public class CalculadoraCientifica extends Calculadora {
         }
     }
 
-    public float raizQuadrada(float n1, int n2) {
-        float r;
-        r = potencia(n1, 1f / n2);
+    public double raizQuadrada(float n1, int n2) {
+        double r;
+        r = Math.pow(n1, 1f/n2); 
         return r;
     }
 }
